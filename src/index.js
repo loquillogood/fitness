@@ -1,17 +1,44 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+/* const element = document.createElement('h1')
+element.innerText= 'Hola React'
+const container= document.getElementById('root')
+container.appendChild(element) */
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from './components/App'
+import 'bootstrap/dist/css/bootstrap.css'
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+/*
+function getName(user){
+  return `${user.firstName.concat(' ',user.lastName)}`
+
+}
+
+function getGreeting(user){
+  if(user){
+    return <h1>Hola {getName(user)}</h1>  
+  }
+  return <h1>Hola extraño</h1>
+}
+
+const user = {
+  firstName: 'Martín',
+  lastName: 'Morales Núñez',
+  avatar: 'https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-256.png'
+}
+//const name= 'Martín Morales Núñez'
+//const element = <h1>{user.firstName.concat(' ',user.lastName)}</h1>
+
+const element = <div>
+    <h1>{getGreeting(user)}</h1>
+    <img src={user.avatar} />
+</div>
+*/
+
+const container= document.getElementById('root')
+
+// ReactDOM.render(__QUE__,__DONDE__)
+//ReactDOM.render(element, container)
+
+//ReactDOM.render(<Exercices/>, container)
+ReactDOM.render(<App/>, container)
